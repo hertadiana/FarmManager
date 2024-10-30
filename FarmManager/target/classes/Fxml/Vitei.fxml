@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane stylesheets="@style.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manager.farm.ViteiController">
+    <children>
+        <TableView fx:id="tabelVitei" layoutX="30.0" layoutY="40.0" onMouseClicked="#openViteiAtributeWindow" prefHeight="214.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="colNumeVitel" prefWidth="140.79999351501465" text="Nume" />
+                <TableColumn fx:id="colNumarVitel" prefWidth="102.39999389648438" text="Numar" />
+                <TableColumn fx:id="colDataVitel" prefWidth="140.80001831054688" text="Data Nastere" />
+                <TableColumn fx:id="colSex" prefWidth="109.5999755859375" text="Sex" />
+            </columns>
+
+        </TableView>
+        <TextField fx:id="textNumarVitel" layoutX="104.0" layoutY="302.0" promptText="Numar" />
+        <TextField fx:id="textNumeVitel" layoutX="104.0" layoutY="275.0" promptText="Nume" />
+        <TextField fx:id="textSex" layoutX="104.0" layoutY="328.0" promptText="Sex" />
+
+        <DatePicker fx:id="textDataVitel" layoutX="104.0" layoutY="360.0" />
+        <ButtonBar layoutX="339.0" layoutY="295.0" prefHeight="40.0" prefWidth="200.0">
+            <buttons>
+                <Button fx:id="btnAddVitel" mnemonicParsing="false" onAction="#addVitel" text="Add" />
+                <Button fx:id="btnDeleteVitel" mnemonicParsing="false" onAction="#deleteVitel" text="Delete" />
+            </buttons>
+        </ButtonBar>
+    </children>
+</AnchorPane>

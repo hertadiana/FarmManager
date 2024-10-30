@@ -1,0 +1,80 @@
+/* style.css */
+
+/* Root style for background and font */
+.root {
+    -fx-background-color: #e0f2e9; /* Light green background */
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #2e7d32; /* Dark green text color */
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: linear-gradient(#66bb6a, #388e3c); /* Gradient green */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-padding: 5 15;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#81c784, #4caf50);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(#388e3c, #2e7d32);
+}
+
+/* Table styling */
+.table-view {
+    -fx-border-color: #388e3c;
+    -fx-table-cell-border-color: #c8e6c9;
+    -fx-padding: 10;
+    -fx-background-color: #ffffff;
+}
+
+.table-view .column-header {
+    -fx-background-color: #66bb6a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-row-cell:filled:selected, .table-view .table-cell:filled:selected {
+    -fx-background-color: #a5d6a7; /* Light green for selected rows */
+    -fx-text-fill: black;
+}
+
+.table-view .table-cell {
+    -fx-padding: 5px;
+}
+
+/* Text fields */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #66bb6a;
+    -fx-border-radius: 3;
+    -fx-padding: 5 10;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #2e7d32; /* Dark green color */
+    -fx-font-weight: bold;
+}
+
+/* DatePicker */
+.date-picker {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #66bb6a;
+    -fx-border-radius: 3;
+    -fx-padding: 5 10;
+}
+
+/* Scene Title */
+.label.title {
+    -fx-font-size: 18px;
+    -fx-text-fill: #2e7d32;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0;
+}

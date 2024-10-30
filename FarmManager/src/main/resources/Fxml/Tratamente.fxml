@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manager.farm.TratamenteController">
+    <children>
+        <TableView fx:id="tabelTratamente" layoutX="55.0" layoutY="30.0" prefHeight="200.0" prefWidth="216.0">
+            <columns>
+                <TableColumn fx:id="colNume" prefWidth="113.20000457763672" text="Nume" />
+                <TableColumn fx:id="colTip" prefWidth="102.0" text="Tip" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAddTratamente" layoutX="328.0" layoutY="308.0" mnemonicParsing="false" onAction="#addTratamente" prefHeight="26.0" prefWidth="73.0" text="Add" />
+        <Button fx:id="btnDeleteTratamente" layoutX="328.0" layoutY="334.0" mnemonicParsing="false" onAction="#deleteTratamente" text="Delete" />
+        <TextField fx:id="textNume" layoutX="104.0" layoutY="302.0" promptText="Nume" />
+        <TextField fx:id="textTip" layoutX="104.0" layoutY="275.0" promptText="Tip" />
+    </children>
+
+</AnchorPane>

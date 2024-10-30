@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manager.farm.VaciController" stylesheets="@style.css">
+    <children>
+        <VBox alignment="TOP_LEFT" layoutX="220.0" layoutY="79.0" prefHeight="242.0" prefWidth="160.0" spacing="10.0">
+            <Button fx:id="buton_vaci" mnemonicParsing="false" onAction="#openVaciWindow" prefHeight="26.0" prefWidth="161.0" text="Vaci" />
+            <Button fx:id="buton_vitei" mnemonicParsing="false" onAction="#openViteiWindow" prefHeight="26.0" prefWidth="173.0" text="Vitei" />
+            <Button fx:id="btnTratamente" mnemonicParsing="false" onAction="#openTratamenteWindow" prefHeight="26.0" prefWidth="204.0" text="Tratamente" />
+            <Button fx:id="btnFuraje" mnemonicParsing="false" onAction="#openFurajeWindow" prefHeight="26.0" prefWidth="205.0" text="Furaje" />
+            <Button fx:id="btnVanzari" mnemonicParsing="false" onAction="#openTransfersWindow" prefHeight="26.0" prefWidth="212.0" text="Vanzari/Achizitii" />
+            <Button fx:id="btnUtilaje" mnemonicParsing="false" onAction="#openUtilajeWindow" prefHeight="26.0" prefWidth="210.0" text="Utilaje" />
+            <Button fx:id="btnCombustibili" mnemonicParsing="false" onAction="#openCombustibiliWindow" prefHeight="26.0" prefWidth="208.0" text="Combustibili" />
+        </VBox>
+    </children>
+</AnchorPane>

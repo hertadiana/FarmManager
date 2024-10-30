@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manager.farm.FurajeController">
+    <children>
+        <TableView fx:id="tabelFuraje" layoutX="145.0" layoutY="63.0" prefHeight="200.0" prefWidth="338.0">
+            <columns>
+                <TableColumn fx:id="colTip" prefWidth="337.5999816894531" text="Tip de Furaje" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAddFuraje" layoutX="212.0" layoutY="296.0" mnemonicParsing="false" onAction="#addFuraje" prefHeight="26.0" prefWidth="73.0" text="Add" />
+        <Button fx:id="btnDeleteFuraje" layoutX="212.0" layoutY="322.0" mnemonicParsing="false" onAction="#deleteFuraje" text="Delete" />
+      <TextField fx:id="textTip" layoutX="300.0" layoutY="297.0" />
+    </children>
+</AnchorPane>

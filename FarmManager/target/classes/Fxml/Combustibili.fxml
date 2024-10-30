@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manager.farm.CombustibiliController">
+   <children>
+      <TableView fx:id="tabelCombustibil" layoutX="55.0" layoutY="30.0" prefHeight="200.0" prefWidth="492.0">
+        <columns>
+          <TableColumn fx:id="colInformatii" prefWidth="491.2000045776367" text="Combustibili" />
+        </columns>
+      </TableView>
+       <Button fx:id="btnAddCombustibil" layoutX="328.0" layoutY="308.0" mnemonicParsing="false" onAction="#addCombustibil" prefHeight="26.0" prefWidth="73.0" text="Add" />
+       <Button fx:id="btnDeleteCombustibil" layoutX="328.0" layoutY="334.0" mnemonicParsing="false" onAction="#deleteCombustibil" text="Delete" />
+      <TextField fx:id="textInformatii" layoutX="144.0" layoutY="309.0" promptText="Informatii" />
+   </children>
+</AnchorPane>

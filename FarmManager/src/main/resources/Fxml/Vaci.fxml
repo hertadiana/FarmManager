@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane stylesheets="@style.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.manager.farm.VaciController">
+   <children>
+      <TableView fx:id="tabelVaci" layoutX="87.0" layoutY="45.0" onMouseClicked="#openAtributeWindow" prefHeight="213.0" prefWidth="464.0">
+        <columns>
+          <TableColumn fx:id="colNume" prefWidth="147.20000457763672" text="Nume" />
+          <TableColumn fx:id="colNumar" prefWidth="147.19998168945312" text="Numar" />
+            <TableColumn fx:id="colData" prefWidth="169.60006713867188" text="Data Nastere" />
+        </columns>
+      </TableView>
+      <ButtonBar layoutX="284.0" layoutY="275.0" prefHeight="40.0" prefWidth="86.0" />
+      <TextField fx:id="textNumar" layoutX="104.0" layoutY="302.0" promptText="Numar" />
+      <TextField fx:id="textNume" layoutX="104.0" layoutY="275.0" promptText="Nume" />
+      <DatePicker fx:id="textData" layoutX="104.0" layoutY="335.0" />
+      <ButtonBar layoutX="339.0" layoutY="295.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+          <Button fx:id="btnAddVaca" mnemonicParsing="false" onAction="#addVaca" text="Add" />
+          <Button fx:id="btnDeleteVaca" mnemonicParsing="false" onAction="#deleteVaca" text="Delete" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
